@@ -3,7 +3,9 @@ import type { Route } from "./+types/countries";
 import { useState } from "react";
 
 export async function clientLoader() {
-  const res = await fetch("https://restcountries.com/v3.1/independent?status=true&fields=capital,region,subregion,population,name,flags");
+  const res = await fetch(
+    "https://restcountries.com/v3.1/independent?status=true&fields=capital,region,subregion,population,name,flags"
+  );
   const data = await res.json();
   return data;
 }
@@ -24,7 +26,7 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-6 text-gray-900">Countries</h2>
-      <div className="flex flex-col sm:flex-row gap-4 mb-6">
+      <div className="flex flex-col sm:flex-row gap-4 mb-6 text-black">
         <input
           type="text"
           placeholder="Search by name..."
