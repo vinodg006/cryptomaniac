@@ -1,87 +1,54 @@
-# Welcome to React Router!
+![Title](images/title.png)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+<div align="center">
+  <img src="https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc" />
+  <img src="https://img.shields.io/badge/reactrouter-%23000000?style=for-the-badge&logo=reactrouter&labelColor=%23000&color=%23CA4245" />
+  <img src="https://img.shields.io/badge/tailwindcss-%23000?style=for-the-badge&logo=tailwindcss&labelColor=%23000&color=%2306B6D4" />
+  <img src="https://img.shields.io/badge/vite-%23646CFF?style=for-the-badge&logo=vite&labelColor=%23000&color=%23646CFF" />
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+# World Explorer
 
-## Features
+A platform to explore all the countries in world and get basic info. This is using https://restcountries.com to fetch up-to-date data.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
 
-## Getting Started
+[Checkout the demo](https://world-explorer-one.vercel.app/)
 
-### Installation
 
-Install the dependencies:
+![Demo](images/demo.gif)
+
+## <a name="features">🔋 Features</a>
+
+👉 **Updated Records**: Displays the latest records about all countries in the world.
+
+👉 **Search and Filter**: Allows users to search and filter by regions like Asia, Eurpoe, etc.
+
+
+
+## Tech Stack
+
+**Framework:** React Router v7 (Typescript)
+
+**Styling:** TailwindCSS
+
+**Bundler:** Vite
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+
+**Installation**
+
+Install the project dependencies using npm:
 
 ```bash
 npm install
 ```
 
-### Development
 
-Start the development server with HMR:
+**Running the Project**
 
 ```bash
 npm run dev
 ```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
